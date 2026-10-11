@@ -1,0 +1,234 @@
+@media (max-width: 500px) {
+  .back {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(fundo2melhor.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    min-height: 100vh;
+
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+#title{
+    text-align: center;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+main{
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+
+
+section{
+    display: flex;
+    justify-content: end;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content2{
+    border: 0.2rem solid rgb(183, 189, 194);
+    height: 30rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    position: absolute;
+    align-self: center;
+    z-index: 1;
+    grid-column: 1/2;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#content{
+   border: 0.2rem solid rgb(183, 189, 194);
+    height: 30rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+#box{
+    height: 30rem;
+    width: 100%;
+    border: 0.2rem solid rgb(183, 189, 194);
+    display:flex ;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+
+}
+
+.back{
+    width: clamp(200px, 70%, 1200px);
+    position: relative;
+    z-index: 2;
+    background-color: rgba(84, 2, 2, 0.499);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
+    display: grid;    
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "box content content2";
+    padding: 3rem;
+    gap: 2rem;
+    transition: 1s;
+    
+}
+
+.box {  
+  grid-area: box;
+}
+
+.content {
+  grid-area: content;
+}
+
+.content2{
+    grid-area: content2;
+}
+
+
+.back.ativo {
+  grid-template-areas: "content box";
+  grid-template-columns:  1fr 2fr;
+}
+
+.content.sumir{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#content2.mostrar{
+    opacity: 1;
+    visibility: visible;
+    z-index: 3;
+}
+
+
+label{
+    color: aliceblue;
+    max-width: 100%;
+    word-break: break-word;
+}
+
+button{
+    min-width: 0;
+    width: 98%;
+    max-width: 33rem;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    padding: 0.5rem ;
+    text-align: center;
+    border-radius: 1rem;
+    color: aliceblue;
+    background: linear-gradient(to right, rgb(69, 11, 11),  rgb(145, 15, 15));
+    border: none;
+}
+
+h1{ 
+    width: clamp(200px, 95%, 600px);
+    flex: none;
+    font-size: clamp(1rem, 7vw, 5rem);
+    display: flex;
+    color: aliceblue;
+    z-index: 1;
+    font-family: monospace;
+}
+
+#texto{
+    color: aliceblue;
+    width: clamp(100px, 95%, 1200px);
+    font-size:clamp(1rem, 2.5vw, 1.5rem);
+    z-index: 1;
+    font-family: monospace;
+}
+
+.parag{
+    display: block;
+
+    font-size: 1.4rem;
+    font-family: monospace;
+    font-size: clamp(0.9rem, 1.5vw, 1.4rem);
+}
+
+input{
+    gap: 10px;
+    border-radius: 1rem;
+    height: 2rem;
+    border: none;
+    opacity: 0.5;
+    box-sizing: border-box;
+    width: 98%;
+    max-width: 33rem;
+    display: block;
+}
+
+hr{
+    background-color: aliceblue;
+    height: 0.2rem;
+    width: clamp(20px, 10vw, 480px);
+    z-index: 2;
+    border: none;
+    margin: 0;
+    justify-self: start;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+span{
+   display: flex;
+   justify-content: center;
+   color: brown;
+}
+
+.svg{
+    height: 35px;
+    width: 35px;
+}
+
+#svgs{
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    align-self: center;
+}

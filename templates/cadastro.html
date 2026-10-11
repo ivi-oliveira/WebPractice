@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='ivi.ico') }}" type="image/x-icon">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+     
+    <main >
+        
+        <section>
+            <div class="img"> </div>
+
+                <div class="back" id="back"> 
+                    <div id="box" class="box">
+                    <h1 id="bemvindo">Bem Vindo!</h1>
+                    <hr>
+                    <p id="texto" >Esse site foi desenvolvido com o objetivo de estudar, práticar e desenvolver habilidades em html,css, python e banco de dados. Tendo o intuito, por fim, de aproveitamente para futuros projetos. É claro que,  no meio do processo, enlouqueci</p>
+                   </div>
+
+                    <div id="content" class="content">  
+                        <p id="title">Sign up</p>                        
+                            <form  method="post" action="/enviar">
+                                <label for="usuario" class="parag" >Usuário: </label>
+                                    <input type="text" id="usuario" name="usuario" class="input">
+                                    <span id="erro">{{ erro }}</span>
+                                <br>
+                                <label for="idade" class="parag" >Idade: </label>
+                                    <input type="date" id="idade" name="idade" class="input">
+                                    <span id="erro">{{ erro }}</span>
+                                <br>
+                                <label for="senha" class="parag" >Senha: </label>
+                                    <input type="text" id="senha" name="senha" class="input">
+                                    <span id="erro">{{ erro }}</span>
+
+                                <button type="submit" class="botao">ENVIAR</button> <br>
+
+                            </form>                                  
+                           <a href="#" class="btn" onclick="trocar('texto', 'Ficamos feliz em ter você de volta, tem  muitas novidades esperando por você!');
+                                                            trocar('bemvindo', 'Bem vindo de volta!')">Fazer Login</a>   
+                    </div>
+                
+
+            
+                    <div id="content2" class="content2">  
+                        <p id="title">Sign in</p>                        
+                            <form  method="post" action="/entrar">
+                                <label for="usuario" class="parag" >Usuário: </label>
+                                    <input type="text" id="usuario" name="usuario" class="input">
+                                    <span id="erro">{{ erro2 }}</span>
+                                <br>
+                                <label for="senha" class="parag" >Senha: </label>
+                                    <input type="text" id="senha" name="senha" class="input">
+                                    <span id="erro">{{ erro2 }}</span>
+
+                                <button type="submit" class="botao">ENTRAR</button> <br>
+
+                            </form>                                  
+                           <a href="#" class="btn-cadastro" onclick="trocar('texto', 'Esse site foi desenvolvido com o objetivo de estudar, práticar e desenvolver habilidades em html,css,python e banco de dados. Tendo o intuito, por fim, de aproveitamente para futuros projetos. É claro que,  no meio do processo, enlouqueci');
+                                                                    trocar('bemvindo','Bem vindo!')">
+                            se cadastrar</a>   
+                            <div id="svgs">
+                                <img src="{{ url_for('static', filename='instagram-circle.png') }}" alt="" class="svg">
+                                <img src="{{ url_for('static', filename='pinterest.png') }}" alt="" class="svg">
+                                <img src="{{ url_for('static', filename='tik-tok.png') }}" alt="" class="svg">
+                            </div>
+                    </div>
+                    </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='frontend.js') }}"></script>
+</body>
+</html>
