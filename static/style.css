@@ -8,7 +8,6 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(fundo2melhor.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -24,12 +23,12 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background:rgb(232, 210, 206);
 }
 
 #title{
     text-align: center;
-    color: aliceblue;
+    color: rgb(153, 34, 20);
     font-size: 2rem;
     font-family: monospace;
 }
@@ -51,7 +50,7 @@ section{
 }
 
 #content2{
-    border: 0.2rem solid rgb(183, 189, 194);
+    border: 0.2rem solid rgb(207, 184, 180);
     height: 30rem;
     width:100%;
     display: flex;
@@ -67,7 +66,7 @@ section{
 }
 
 #content{
-   border: 0.2rem solid rgb(183, 189, 194);
+   border: 0.2rem solid rgb(207, 184, 180);
     height: 30rem;
     width:100%;
     display: flex;
@@ -81,7 +80,7 @@ section{
 #box{
     height: 30rem;
     width: 100%;
-    border: 0.2rem solid rgb(183, 189, 194);
+    border: 0.2rem solid rgb(207, 184, 180);
     display:flex ;
     flex-direction: column;
     border-radius: 1rem;
@@ -96,7 +95,7 @@ section{
     width: clamp(200px, 70%, 1200px);
     position: relative;
     z-index: 2;
-    background-color: rgba(84, 2, 2, 0.499);
+    background-color:rgb(250, 243, 242);
     border-radius: 0.5rem;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
     display: grid;    
@@ -139,7 +138,7 @@ section{
 
 
 label{
-    color: aliceblue;
+    color: rgb(153, 34, 20);
     max-width: 100%;
     word-break: break-word;
 }
@@ -153,8 +152,8 @@ button{
     padding: 0.5rem ;
     text-align: center;
     border-radius: 1rem;
-    color: aliceblue;
-    background: linear-gradient(to right, rgb(69, 11, 11),  rgb(145, 15, 15));
+    color: rgb(250, 246, 246);
+    background: linear-gradient(to right,rgb(153, 34, 20),  rgb(221, 62, 44));
     border: none;
 }
 
@@ -163,28 +162,29 @@ h1{
     flex: none;
     font-size: clamp(1rem, 7vw, 5rem);
     display: flex;
-    color: aliceblue;
+    color: rgb(153, 34, 20);
     z-index: 1;
     font-family: monospace;
 }
 
 #texto{
-    color: aliceblue;
+    color:rgb(153, 34, 20);
     width: clamp(100px, 95%, 1200px);
-    font-size:clamp(1rem, 2.5vw, 1.5rem);
+    font-size:clamp(1rem, 2vw, 1.3rem);
     z-index: 1;
     font-family: monospace;
 }
 
 .parag{
     display: block;
-
-    font-size: 1.4rem;
+    color: rgb(91, 41, 36);
+    font-size: 1rem;
     font-family: monospace;
-    font-size: clamp(0.9rem, 1.5vw, 1.4rem);
+    font-size: clamp(0.9rem, 1vw, 1.4rem);
 }
 
 input{
+    background-color: rgb(232, 210, 206);
     gap: 10px;
     border-radius: 1rem;
     height: 2rem;
@@ -197,7 +197,7 @@ input{
 }
 
 hr{
-    background-color: aliceblue;
+    background-color: rgb(207, 184, 180);
     height: 0.2rem;
     width: clamp(20px, 10vw, 480px);
     z-index: 2;
@@ -211,7 +211,7 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    color: aliceblue;
+    color: rgb(153, 34, 20);
     font-size: 1.2rem;
 }
 
@@ -222,6 +222,8 @@ span{
 }
 
 .svg{
+    background-color: rgb(207, 184, 180);
+    border-radius: 100%;
     height: 35px;
     width: 35px;
 }
